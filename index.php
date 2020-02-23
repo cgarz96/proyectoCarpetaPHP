@@ -11,12 +11,12 @@
 </head>
 <body>
 <div class="container card mt-4"> <br>
-	<form  method="POST" > 
+	<form  method="POST" action="generarDirectorio.php" > 
 	  <div class="form-group">
 	    <label for="nuevaCarpeta">Nueva Carpeta:</label>
-	    <input type="text" class="form-control" name="nombreCarpeta" id="" placeholder="Introduzca el nombre de la carpeta">
+	    <input type="text" class="form-control" name="nombreCarpeta" id="" placeholder="Introduzca el nombre de la carpeta" required>
 	  </div>
-	  <button type="button" class="btn btn-success" onclick="generarCarpeta()">Crear</button>
+	  <button type="submit" class="btn btn-success" >Crear</button>
 	</form>
 	<hr>
 	<a  onclick="mostrarCarpeta();" style="cursor: pointer;" class="alert alert-success" role="alert"> <h4 id="rutaCarpeta"></h4></a> 
